@@ -1,0 +1,5 @@
+com\ajackus\Digital\Library\Model\Book.class
+com\ajackus\Digital\Library\service\BookService.class
+com\ajackus\Digital\Library\DigitalLibraryApplication.class
+com\ajackus\Digital\Library\repository\BookRepository.class
+com\ajackus\Digital\Library\Controller\BookController.class
