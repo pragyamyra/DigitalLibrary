@@ -30,12 +30,12 @@ private final BookService bookService;
         this.bookService = bookService;
     }
     
-    @PostMapping
+    @PostMapping("/add")
     public Book addBook(@RequestBody Book book) {
         return bookService.addBook(book);
     }
     
-    @GetMapping
+    @GetMapping("/getall")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
