@@ -10,7 +10,7 @@ The **Digital Library API** is a Spring Boot application that allows librarians 
 - **H2 Database** (for in-memory storage)
 - **Lombok** (to reduce boilerplate code)
 - **Maven** (dependency management & build tool)
-- **Deployment:** Render (or Railway)
+- **Deployment:** Render
 
 ---
 
@@ -41,7 +41,7 @@ mvn spring-boot:run
 ## 📌 API Endpoints
 
 ### **1️⃣ Add a Book**
-**POST** `/api/books`
+**POST** `/api/books/add`
 #### Request Body:
 ```json
 {
@@ -55,7 +55,6 @@ mvn spring-boot:run
 #### Response:
 ```json
 {
-  "message": "Book added successfully",
   "book": {
     "id": 1,
     "title": "Java Programming",
@@ -67,7 +66,7 @@ mvn spring-boot:run
 ```
 
 ### **2️⃣ View All Books**
-**GET** `/api/books`
+**GET** `/api/books/getall`
 
 ### **3️⃣ Search Book by ID**
 **GET** `/api/books/{id}`
